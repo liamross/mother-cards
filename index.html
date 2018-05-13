@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Mother's Day</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Merriweather|Parisienne" rel="stylesheet">
+
+  <style>
+    html {
+      height: 100%;
+      background-color: rgba(245, 245, 219, 0.5);
+
+    }
+
+    body {
+      max-width: 890px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .heading {
+      font-family: 'Archivo Narrow', sans-serif;
+    }
+
+    p,
+    .paragraph {
+      font-family: 'Merriweather', serif;
+    }
+
+    .heading {
+      opacity: 0;
+      font-size: 24px;
+      animation: fadein 1s forwards;
+    }
+
+    .paragraph {
+      opacity: 0;
+      animation: fadein 1s forwards;
+    }
+
+    .paragraph--1 {
+      animation-delay: 1s;
+    }
+
+    .paragraph--2 {
+      animation-delay: 4s;
+    }
+
+    .paragraph--3 {
+      animation-delay: 12s;
+    }
+
+    .signature {
+      font-family: 'Parisienne', cursive;
+      opacity: 0;
+      animation: fadein 1s forwards;
+      animation-delay: 16s;
+      text-align: end;
+      font-size: 28px;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">
+    Happy Mothers Day!
+  </h1>
+  <p class="paragraph paragraph--1">
+    Unfortunately I don't have any material for cards so I thought I could make a website instead!
+  </p>
+  <p class="paragraph paragraph--2">
+    I just wanted to say that I'm very proud of how much work you have put in and continue to put into this festival. I was amazed
+    at the level of complexity and the sheer amount of content that is in it, and you should be proud of how it has gone.
+    It has been very surreal to hear from friends that their parents are discussing events, or to hear people talk about
+    it without realizing my connection to it.
+  </p>
+  <p class="paragraph paragraph--3">
+    I love you very much, and I am so grateful for everything you do for us, and for the constant support and love. Thank you,
+    and I hope you have a fantastic Mother’s Day.
+  </p>
+  <div class="signature">
+    Love, Liam
+  </div>
+</body>
+
+</html>
