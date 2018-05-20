@@ -20,24 +20,23 @@
     }
 
     .heading {
-      opacity: 0;
       font-size: 24px;
-      animation: fadein 1s forwards;
       font-family: 'Archivo Narrow', sans-serif;
     }
 
     .paragraph {
-      opacity: 0;
-      animation: fadein 1s forwards;
       font-family: 'Merriweather', serif;
     }
 
     .signature {
       font-family: 'Parisienne', cursive;
-      opacity: 0;
-      animation: fadein 1s forwards;
       text-align: end;
       font-size: 28px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadein 1s forwards;
     }
 
     .stage--0 {
@@ -72,24 +71,24 @@
 </head>
 
 <body>
-  <h1 class="heading stage--0">
+  <h1 class="heading fade-in stage--0">
     Happy Mothers Day!
   </h1>
-  <p class="paragraph stage--1">
+  <p class="paragraph fade-in stage--1">
     Unfortunately I don't have any material for cards so I thought I could make a website instead!
   </p>
-  <p class="paragraph stage--2">
+  <p class="paragraph fade-in stage--2">
     I just wanted to say that I'm very proud of how much work you have put in and continue to put into this festival. I was amazed
     at the level of complexity and the sheer amount of content that is in it, and you should be proud of how it has gone.
     It has been very surreal to hear from friends that their parents are discussing events, or to hear people talk about
     it without realizing my connection to it.
   </p>
-  <p class="paragraph stage--3">
+  <p class="paragraph fade-in stage--3">
     I love you very much, and I am so grateful for everything you do for us, and for the constant support and love. You are a
     constant source of inspiration for your work ethic and your generosity, and I'm very proud to call you my mother. Thank
     you, and I hope you have a fantastic Mother’s Day.
   </p>
-  <div class="signature stage--4">
+  <div class="signature fade-in stage--4">
     Love, Liam
   </div>
 </body>
