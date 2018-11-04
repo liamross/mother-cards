@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Happy Mother's Day</title>
 
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Merriweather|Parisienne" rel="stylesheet">
 
@@ -138,8 +137,8 @@
     let currentIndex = 0;
 
     const options = [
-      [birthday2018, 'rgba(255, 150, 150, 0.5)'],
-      [mothersDay2018, 'rgba(245, 245, 219, 0.5)'],
+      [birthday2018, 'rgba(255, 150, 150, 0.5)', 'Happy Birthday'],
+      [mothersDay2018, 'rgba(245, 245, 219, 0.5)', 'Happy Mother\'s Day'],
     ];
 
     const root = document.getElementById('root');
@@ -147,6 +146,8 @@
 
     const background = document.getElementById('background');
     background.style.backgroundColor = options[currentIndex][1];
+
+    document.title = options[currentIndex][2];
 
     const button = document.getElementById('button');
     button.innerHTML = currentIndex >= options.length - 1
@@ -162,8 +163,8 @@
       }
 
       root.innerHTML = options[currentIndex][0];
-
       background.style.backgroundColor = options[currentIndex][1];
+      document.title = options[currentIndex][2];
 
       button.innerHTML = currentIndex >= options.length - 1
         ? 'Return to Start'
