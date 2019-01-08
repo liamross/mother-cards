@@ -1,177 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Merriweather|Parisienne"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Merriweather|Parisienne" rel="stylesheet">
+    <style>
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-  <style>
-    html {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+      .background {
+        height: 100%;
+      }
 
-    .background {
-      height: 100%;
-    }
+      .wrapper {
+        max-width: 890px;
+        margin: auto;
+        padding: 24px;
+        height: 100%;
+      }
 
-    .wrapper {
-      max-width: 890px;
-      margin: auto;
-      padding: 24px;
-      height: 100%;
-    }
+      .heading {
+        font-size: 24px;
+        font-family: 'Archivo Narrow', sans-serif;
+      }
 
-    .heading {
-      font-size: 24px;
-      font-family: 'Archivo Narrow', sans-serif;
-    }
+      .paragraph {
+        font-family: 'Merriweather', serif;
+      }
 
-    .paragraph {
-      font-family: 'Merriweather', serif;
-    }
+      .signature {
+        font-family: 'Parisienne', cursive;
+        text-align: end;
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
 
-    .signature {
-      font-family: 'Parisienne', cursive;
-      text-align: end;
-      font-size: 28px;
-      margin-bottom: 16px;
-    }
+      .button {
+        font-family: 'Merriweather', serif;
+        cursor: pointer;
+        display: inline;
+      }
 
-    .button {
-      font-family: 'Merriweather', serif;
-      cursor: pointer;
-      display: inline;
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadein 1s forwards;
-    }
-
-    .stage--0 {
-      animation-delay: 0s;
-    }
-
-    .stage--1 {
-      animation-delay: 1s;
-    }
-
-    .stage--2 {
-      animation-delay: 4s;
-    }
-
-    .stage--3 {
-      animation-delay: 12s;
-    }
-
-    .stage--4 {
-      animation-delay: 18s;
-    }
-
-    @keyframes fadein {
-      from {
+      .fade-in {
         opacity: 0;
+        animation: fadein 1s forwards;
       }
 
-      to {
-        opacity: 1;
+      .stage--0 {
+        animation-delay: 0s;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="background" id="background">
-    <div class="wrapper">
-      <div id="root"></div>
-      <div class="button fade-in stage--4" id="button"></div>
+      .stage--1 {
+        animation-delay: 1s;
+      }
+
+      .stage--2 {
+        animation-delay: 4s;
+      }
+
+      .stage--3 {
+        animation-delay: 12s;
+      }
+
+      .stage--4 {
+        animation-delay: 18s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="background" id="background">
+      <div class="wrapper">
+        <div id="root"></div>
+        <div class="button fade-in stage--4" id="button"></div>
+      </div>
     </div>
-  </div>
 
-  <script>
-    const birthday2018 = `
-      <h1 class="heading fade-in stage--0">
-        Happy Birthday Mom
-      </h1>
-      <p class="paragraph fade-in stage--1">
-        I figured since I had this going from Mother's Day I could just add to it!
-      </p>
-      <p class="paragraph fade-in stage--2">
-        I'm really sorry I planned this trip over your birthday; however I am writing you this card to promise you a dinner sometime when I get back. I'm excited for all of the plans over Christmas, and to have some time back home. I continue to be in awe of the work you continue to put in year round for the festival and your projects. It's always inspiring to me.
-      </p>
-      <p class="paragraph fade-in stage--3">
-        Happy birthday, I love you very much. You're the best mother we could have asked for, and you're always there for us. Sorry again I couldn't be there today, but I'll be thinking about you and keeping you updated on New York.
-      </p>
-      <div class="signature fade-in stage--4">
-        Love, Liam
-      </div>
-    `;
+    <script>
+      const birthday2018 = `
+        <h1 class="heading fade-in stage--0">
+          Happy Birthday Mom
+        </h1>
+        <p class="paragraph fade-in stage--1">
+          I figured since I had this going from Mother's Day I could just add to it!
+        </p>
+        <p class="paragraph fade-in stage--2">
+          I'm really sorry I planned this trip over your birthday; however I am writing you this card to promise you a dinner sometime when I get back. I'm excited for all of the plans over Christmas, and to have some time back home. I continue to be in awe of the work you continue to put in year round for the festival and your projects. It's always inspiring to me.
+        </p>
+        <p class="paragraph fade-in stage--3">
+          Happy birthday, I love you very much. You're the best mother we could have asked for, and you're always there for us. Sorry again I couldn't be there today, but I'll be thinking about you and keeping you updated on New York.
+        </p>
+        <div class="signature fade-in stage--4">
+          Love, Liam
+        </div>
+      `;
 
-    const mothersDay2018 = `
-      <h1 class="heading fade-in stage--0">
-        Happy Mothers Day!
-      </h1>
-      <p class="paragraph fade-in stage--1">
-        Unfortunately I don't have any material for cards so I thought I could make a website instead!
-      </p>
-      <p class="paragraph fade-in stage--2">
-        I just wanted to say that I'm very proud of how much work you have put in and continue to put into this festival. I was amazed at the level of complexity and the sheer amount of content that is in it, and you should be proud of how it has gone. It has been very surreal to hear from friends that their parents are discussing events, or to hear people talk about it without realizing my connection to it.
-      </p>
-      <p class="paragraph fade-in stage--3">
-        I love you very much, and I am so grateful for everything you do for us, and for the constant support and love. You are a constant source of inspiration for your work ethic and your generosity, and I'm very proud to call you my mother. Thank you, and I hope you have a fantastic Mother’s Day.
-      </p>
-      <div class="signature fade-in stage--4">
-        Love, Liam
-      </div>
-    `;
+      const mothersDay2018 = `
+        <h1 class="heading fade-in stage--0">
+          Happy Mothers Day!
+        </h1>
+        <p class="paragraph fade-in stage--1">
+          Unfortunately I don't have any material for cards so I thought I could make a website instead!
+        </p>
+        <p class="paragraph fade-in stage--2">
+          I just wanted to say that I'm very proud of how much work you have put in and continue to put into this festival. I was amazed at the level of complexity and the sheer amount of content that is in it, and you should be proud of how it has gone. It has been very surreal to hear from friends that their parents are discussing events, or to hear people talk about it without realizing my connection to it.
+        </p>
+        <p class="paragraph fade-in stage--3">
+          I love you very much, and I am so grateful for everything you do for us, and for the constant support and love. You are a constant source of inspiration for your work ethic and your generosity, and I'm very proud to call you my mother. Thank you, and I hope you have a fantastic Mother’s Day.
+        </p>
+        <div class="signature fade-in stage--4">
+          Love, Liam
+        </div>
+      `;
 
-    let currentIndex = 0;
+      let currentIndex = 0;
 
-    const options = [
-      [birthday2018, 'rgba(255, 150, 150, 0.5)', 'Happy Birthday'],
-      [mothersDay2018, 'rgba(245, 245, 219, 0.5)', 'Happy Mother\'s Day'],
-    ];
+      const options = [
+        [birthday2018, 'rgba(255, 150, 150, 0.5)', 'Happy Birthday'],
+        [mothersDay2018, 'rgba(245, 245, 219, 0.5)', "Happy Mother's Day"]
+      ];
 
-    const root = document.getElementById('root');
-    root.innerHTML = options[currentIndex][0];
-
-    const background = document.getElementById('background');
-    background.style.backgroundColor = options[currentIndex][1];
-
-    document.title = options[currentIndex][2];
-
-    const button = document.getElementById('button');
-    button.innerHTML = currentIndex >= options.length - 1
-      ? 'Return to Start'
-      : 'See Previous';
-
-    button.addEventListener('click', handleButtonClick);
-
-    function handleButtonClick() {
-      currentIndex = currentIndex + 1;
-      if (currentIndex >= options.length) {
-        currentIndex = 0;
-      }
-
+      const root = document.getElementById('root');
       root.innerHTML = options[currentIndex][0];
+
+      const background = document.getElementById('background');
       background.style.backgroundColor = options[currentIndex][1];
+
       document.title = options[currentIndex][2];
 
-      button.innerHTML = currentIndex >= options.length - 1
-        ? 'Return to Start'
-        : 'See Previous';
-    }
+      const button = document.getElementById('button');
+      button.innerHTML =
+        currentIndex >= options.length - 1 ? 'Return to Start' : 'See Previous';
 
-  </script>
-</body>
+      button.addEventListener('click', handleButtonClick);
 
+      function handleButtonClick() {
+        currentIndex = currentIndex + 1;
+        if (currentIndex >= options.length) {
+          currentIndex = 0;
+        }
+
+        root.innerHTML = options[currentIndex][0];
+        background.style.backgroundColor = options[currentIndex][1];
+        document.title = options[currentIndex][2];
+
+        button.innerHTML =
+          currentIndex >= options.length - 1
+            ? 'Return to Start'
+            : 'See Previous';
+      }
+    </script>
+  </body>
 </html>
